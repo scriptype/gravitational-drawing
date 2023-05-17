@@ -8,15 +8,16 @@ const createGravitationSequence = (mass, keyframes) => {
       if (!frameProperties.hasOwnProperty(prop)) {
         continue
       }
+      const isPositionProp = positionProps.includes(prop)
       const value = frameProperties[prop]
       if (typeof value === 'function') {
-        if (prop === 'x' || prop === 'y') {
+        if (isPositionProp) {
           mass[prop] += value(mass)
         } else {
           mass[prop] *= value(mass)
         }
       } else if (typeof value === 'number') {
-        if (prop === 'x' || prop === 'y') {
+        if (isPositionProp) {
           mass[prop] += value
         } else {
           mass[prop] *= value
