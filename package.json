@@ -1,0 +1,9 @@
+{
+  "name": "gravitational-drawing",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": ["art"],
+  "author": "Mustafa Enes Ertarhanacı",
+  "license": "MIT"
+}
