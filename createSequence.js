@@ -1,4 +1,4 @@
-const createGravitationSequence = (mass, keyframes) => {
+const createSequence = (mass, keyframes) => {
   let frame = 0
   
   const positionProps = ['x', 'y']
@@ -54,4 +54,4 @@ const createGravitationSequence = (mass, keyframes) => {
   }
 }
 
-export default createGravitationSequence
+export default createSequence

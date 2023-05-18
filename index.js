@@ -1,5 +1,5 @@
-import createGravitationSequence from './createGravitationSequence.js'
+import createSequence from './createSequence.js'
 
 export {
-  createGravitationSequence
+  createSequence
 }
